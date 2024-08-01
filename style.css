@@ -13,7 +13,7 @@
     --bg-color : #191f36;
     --snd-bg-color: #262B40;
     --text-color:#fff ;
-    --main-color:#59B2F4;
+    --main-color:#59b1f4;
 }
 html
 {
@@ -171,4 +171,123 @@ span{
 }
 .about-content h3{
     font-size: 2.6rem;
+}
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.skills h2{
+    margin-bottom: 5rem;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+ .skill-container  .skillbox{
+    flex: 1 1 30rem ;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+
+}
+
+.skill-container  .skillbox:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.skillbox i{
+    font-size: 7rem;
+    color: var(--main-color);
+}
+.skillbox h3{
+    font-size: 2.6rem;
+
+}
+.skillbox p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+
+}
+
+.projects{
+    background: var(--snd-bg-color);
+}
+.projects h2{
+    margin-bottom: 4rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1 rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+.project-box img{
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+.project-box:hover{
+    transform: scale(1.1);
+}
+
+.project-box .projectlayer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1) , var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+
+}
+.project-box:hover .projectlayer{
+    transform: translateY(0);
+}
+
+.projectlayer h4{
+    font-size: 3rem;
+}
+.projectlayer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.projectlayer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.projectlayer a i{
+    font-size: 2rem;
+    color: var(--snd-bg-color);
+    
 }
