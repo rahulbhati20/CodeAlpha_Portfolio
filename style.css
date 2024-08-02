@@ -12,7 +12,7 @@
 :root{
     --bg-color : #191f36;
     --snd-bg-color: #262B40;
-    --text-color:#fff ;
+    --text-color:#fff ;  
     --main-color:#59b1f4;
 }
 html
@@ -61,7 +61,7 @@ header{
 }
 .nav a:hover,
 .nav a:active{
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 #menu{

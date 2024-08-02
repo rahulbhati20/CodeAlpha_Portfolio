@@ -12,7 +12,7 @@ menuIcon.onclick = () => {
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
+window.onscroll = () => {  
     sections.forEach(sec => {
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
@@ -27,7 +27,7 @@ window.onscroll = () => {
         }
     });
 
-    let header = document.querySelector('header');
+    let header = document.querySelector('.header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
     menuIcon.classList.remove('fa-xmark');
@@ -38,7 +38,7 @@ window.onscroll = () => {
 ScrollReveal({ 
     distance: '80px',
     duration: 2000,
-    delay: 200,
+    delay: 200
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
@@ -52,5 +52,5 @@ const typed = new Typed('.multiple-text', {
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
-    loop: true,
+    loop: true
 });
